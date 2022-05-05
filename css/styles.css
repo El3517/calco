@@ -1,3 +1,12 @@
-#add,#subtract,#multiply,#divide{
+#add{
+    display: none;
+}
+#subtract{
+    display: none;
+}
+#multiply{
+    display: none;
+}
+#divide{
     display: none;
 }
