@@ -34,7 +34,7 @@ $(document).ready(function(){
         $("#subtract").show();
         $("#multiply").hide();
         $("#divide").hide();
-        $("form#Calculator").submit(function (event) {
+        $("form#myCalculator").submit(function (event) {
             event.preventDefault();
             const number3 = parseInt($("#subtract1").val());
             const number4 = parseInt($("#subtract2").val());
@@ -45,6 +45,16 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $("#multi-button").click(function(){
-        
+        $("#add").hide();
+        $("#subtract").hide();
+        $("#multiply").show();
+        $("#divide").hide();
+        $("form#myCalculator").submit(function (event) {
+            event.preventDefault()
+            const number7 = parseInt($("#multiply1").val());
+            const number8 = parseInt($("#multiply2").val());
+            const product = multiply(number7, number8);
+            $("#product").text(product);
+        });
     });
-})
+});
