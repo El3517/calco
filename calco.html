@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <link rel="stylesheet" href="./css/bootstrap.css">
-   <link rel="stylesheet" href="./css/styles.css">
-   <script src="./js/jquery-3.6.0.js"></script>
-   <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/scripts.js"></script>
     <title>Advanced Calculator</title>
 </head>
+
 <body>
     <h1>Welcome To Advanced Calculator</h1>
-  <form id="myForm">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6">
-                <h3>Select a basic arithmetic function</h3>
-                <select id="basic">
-                    <option>Addition</option>
-                    <option>Subtraction</option>
-                    <option>Multiplication</option>
-                    <option>Division</option>
-                </select>
+    <form id="myForm">
+            <h3>Select a basic arithmetic function</h3>
+            <select id="basic">
+                <option id="plus">Addition</option>
+                <option id="minus">Subtraction</option>
+                <option id="multi">Multiplication</option>
+                <option id="divid">Division</option>
+            </select>
+            <button type="submit">Enter</button>
+    </form>
+   <span id="basic-output">
+    <form id="myCalculator">
+        <form id="add">
+            <h2>Addition section</h2>
+            <div class="form-group">
+                <label for="add1">1st number:</label>
+                <input id="add1" class="form-control" type="text">
             </div>
-            <div class="col-6">
-                <h3>Select advance function</h3>
-                <select id="advance">
-                    <option>sine</option>
-                    <option>sine inverse</option>
-                    <option>cosine</option>
-                    <option>cosine inverse</option>
-                    <option>tangent</option>
-                    <option>Tangent inverse</option>
-                </select>
+            <div class="form-group">
+                <label for="add2">2nd number:</label>
+                <input id="add2" class="form-control" type="text">
             </div>
-        </div>
-    </div>
-  </form>
+            <button type="submit" class="btn btn-danger">Add</button>
+            <div id="result">
+
+            </div>
+        </form>
+        <form id="subtract">
+            <h2>Subtraction section</h2>
+            <div class="form-group">
+                <label for="subtract1">1st number:</label>
+                <input id="subtract1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="subtract2">2nd number:</label>
+                <input id="subtract2" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">subtract</button>
+            <div id="answer">
+
+            </div>
+        </form>
+        <form id="multiply">
+            <h2>Multiplication section</h2>
+            <div class="form-group">
+                <label for="multiply1">1st number:</label>
+                <input id="multiply1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="multiply2">2nd number:</label>
+                <input id="multiply2" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-warning">Multiply</button>
+            <div id="product">
+
+            </div>
+        </form>
+        <form id="divide">
+            <h2>Division section</h2>
+            <div class="form-group">
+                <label for="divide1">1st number:</label>
+                <input id="divide1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="divide2">2nd number:</label>
+                <input id="divide2" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-success">Divide</button>
+            <div id="resultant">
+
+            </div>
+        </form>
+    </form>
+   </span>
 </body>
+
 </html>
