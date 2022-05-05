@@ -58,3 +58,18 @@ $(document).ready(function(){
         });
     });
 });
+$(document).ready(function(){
+    $("#divide-button").click(function(){
+        $("#add").hide();
+        $("#subtract").hide();
+        $("#multiply").hide();
+        $("#divide").show();
+        $("form#myCalculator").submit(function (event) {
+            event.preventDefault()
+            const number5 = parseInt($("#divide1").val());
+            const number6 = parseInt($("#divide2").val());
+            const resultant = divide(number5, number6);
+            $("#resultant").text(resultant);
+        });
+    });
+});

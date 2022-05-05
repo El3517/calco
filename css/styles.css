@@ -10,3 +10,12 @@
 #divide{
     display: none;
 }
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#addition-button{
+    margin-left: 450px;
+}
